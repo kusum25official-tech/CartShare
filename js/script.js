@@ -966,3 +966,48 @@ document.addEventListener(
 
     }
 );
+
+document.querySelectorAll('a[href="#room-section"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const roomSection = document.getElementById("room-section");
+
+        if (roomSection) {
+            roomSection.classList.remove("d-none");
+
+            roomSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.feature-card').forEach(function (card) {
+    card.addEventListener('click', function (event) {
+
+        const targetId = this.getAttribute('href');
+
+        if (!targetId || !targetId.startsWith("#")) {
+            return;
+        }
+
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            event.preventDefault();
+
+            // Agar section hidden hai to visible karo
+            targetSection.classList.remove("d-none");
+
+            // Section par smoothly scroll karo
+            setTimeout(function () {
+                targetSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }, 100);
+        }
+    });
+});
