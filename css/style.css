@@ -1,0 +1,541 @@
+/* =====================================================
+   CARTSHARE - MAIN STYLESHEET
+   ===================================================== */
+
+
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #212529;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand i {
+    margin-right: 6px;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #f8f9fa,
+        #e9f2ff
+    );
+}
+
+.hero-section h1 {
+    line-height: 1.2;
+}
+
+.hero-section .lead {
+    color: #5f6368;
+    max-width: 600px;
+}
+
+.hero-section .btn {
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================= HERO CARD ================= */
+
+.hero-card {
+    max-width: 380px;
+    margin: auto;
+    padding: 60px 30px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.10);
+
+    transition: 0.4s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-8px);
+}
+
+.hero-card i {
+    font-size: 6rem;
+    color: #0d6efd;
+}
+
+.hero-card h3 {
+    font-weight: 700;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+/* ================= ROOM SECTION ================= */
+
+#room-section {
+    background: #f8f9fa;
+}
+
+.room-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.room-card .card-body {
+    background: #ffffff;
+}
+
+.form-control {
+    min-height: 48px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+
+/* ================= DASHBOARD ================= */
+
+#dashboard {
+    background: #f5f7fa;
+}
+
+.dashboard-header {
+    background: #ffffff;
+
+    padding: 20px 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header h2,
+.dashboard-header h5 {
+    margin-bottom: 0;
+}
+
+
+/* ================= CARDS ================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+}
+
+.card-body {
+    border-radius: 16px;
+}
+
+.card h4 {
+    color: #212529;
+}
+
+
+/* ================= SHARED CART ================= */
+
+.cart-list {
+    min-height: 180px;
+}
+
+.empty-cart {
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #6c757d;
+}
+
+.empty-cart i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+
+/* ================= CART ITEM ================= */
+
+.cart-item {
+    background: #f8f9fa;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-left: 4px solid #0d6efd;
+
+    transition: 0.3s ease;
+}
+
+.cart-item:hover {
+    background: #eef5ff;
+    transform: translateX(3px);
+}
+
+.cart-item h6 {
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.cart-item small {
+    color: #6c757d;
+}
+
+
+/* ================= ACTIVITY LOG ================= */
+
+.activity-log {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.activity-item {
+    padding: 12px 15px;
+
+    border-left: 3px solid #0d6efd;
+
+    background: #f8f9fa;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+}
+
+.activity-item strong {
+    color: #0d6efd;
+}
+
+
+/* ================= FEATURES ================= */
+
+#features {
+    background: #f8f9fa !important;
+}
+
+.feature-card {
+    height: 100%;
+
+    background: #ffffff;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.feature-card i {
+    font-size: 2.8rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.feature-card h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
+/* ================= HOW IT WORKS ================= */
+
+.step-card {
+    height: 100%;
+
+    padding: 30px 20px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    border: 1px solid #e9ecef;
+
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0d6efd;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.step-card h4 {
+    font-weight: 700;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= BADGES ================= */
+
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #212529 !important;
+}
+
+footer h5 {
+    font-weight: 700;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+
+/* ================= PRINT RECEIPT ================= */
+
+.print-receipt {
+    display: none;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-section .lead {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-card {
+        padding: 40px 20px;
+    }
+
+    .hero-card i {
+        font-size: 4.5rem;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-card {
+        padding: 35px 15px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+}
+
+
+/* =====================================================
+   PRINT MODE
+   ===================================================== */
+
+@media print {
+
+    body * {
+        visibility: hidden;
+    }
+
+    .print-receipt,
+    .print-receipt * {
+        visibility: visible;
+    }
+
+    .print-receipt {
+        display: block;
+
+        position: absolute;
+
+        left: 0;
+        top: 0;
+
+        width: 100%;
+
+        padding: 30px;
+
+        background: #ffffff;
+
+        color: #000000;
+    }
+
+    .print-receipt h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .print-receipt h4 {
+        margin-top: 20px;
+    }
+
+}
